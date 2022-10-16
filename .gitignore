@@ -1,0 +1,11 @@
+online_library/media/
+online_library/assets/
+online_library/static/
+online_library/data/
+
+__pycache__/
+*.py[cod]
+
+*.txt
+
+venv/
