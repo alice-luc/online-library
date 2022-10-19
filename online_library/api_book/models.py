@@ -28,7 +28,6 @@ class Book(models.Model):
 
     objects = models.Manager()
 
-
 class Author(models.Model):
 
     name = models.CharField(max_length=30, verbose_name='Name')
@@ -60,3 +59,4 @@ class Genre(models.Model):
         verbose_name_plural = "Genres"
 
     objects = models.Manager()
+

@@ -13,3 +13,7 @@ def read_pdf(book_path: str, current_page: int) -> dict:
         "pages": pages
     }
 
+
+# book_obj = read_pdf('/Users/alice/Downloads/Грокаем алгоритмы ( PDFDrive ).pdf', 15)
+# print(book_obj.get('pages'))
+
