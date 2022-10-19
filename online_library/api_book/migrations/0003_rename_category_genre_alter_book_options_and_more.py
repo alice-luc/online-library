@@ -6,14 +6,10 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0002_alter_book_pdf_file'),
+        ('api_book', '0001_initial'),
     ]
 
     operations = [
-        migrations.RenameModel(
-            old_name='Category',
-            new_name='Genre',
-        ),
         migrations.AlterModelOptions(
             name='book',
             options={'permissions': [('can_upload_book', 'Can upload books')], 'verbose_name': 'Book'},

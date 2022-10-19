@@ -6,15 +6,10 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0003_rename_category_genre_alter_book_options_and_more'),
+        ('api_book', '0001_initial'),
     ]
 
     operations = [
-        migrations.RenameField(
-            model_name='book',
-            old_name='category',
-            new_name='genre',
-        ),
         migrations.AlterField(
             model_name='book',
             name='pdf_file',
