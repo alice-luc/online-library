@@ -27,16 +27,6 @@ class BookViewSet(viewsets.ModelViewSet):
         return Response({**serializer.data, 'content': book_content.get('pages')[0].extract_text()})
 
 
-# class BookContentViewSet(viewsets.GenericViewSet):
-#     queryset = Book.objects.all()
-#     serializer_class = BookSerializer
-#
-#     @staticmethod
-#     def read_book(path: str, page_num: int) -> object:
-#         return read_pdf(path, page_num)
-    # permission_classes = [IsAccountAdminOrReadOnly]
-
-
 def get_user_active_page(user_id: int) -> int:
     # print(UserBookActivity.objects.get(user=user_id).page_number)
     return UserBookActivity.objects.get(user=user_id).page_number
