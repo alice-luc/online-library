@@ -1,5 +1,5 @@
-online_library/media/
-online_library/assets/
+online_library/xmedia/
+online_library/xassets/
 online_library/static/
 online_library/data/
 
@@ -11,3 +11,4 @@ __pycache__/
 venv/
 
 online_library/.env
+.fleet
