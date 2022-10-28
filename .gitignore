@@ -6,7 +6,7 @@ online_library/data/
 __pycache__/
 *.py[cod]
 
-*.txt
+TODO.txt
 
 venv/
 
